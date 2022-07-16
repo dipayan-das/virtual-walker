@@ -20,14 +20,13 @@ void loop()
 
   lsm.getEvent(&a, &m, &g, &temp); 
 
-  Serial.print("Accel X: "); Serial.print(a.acceleration.x); Serial.print(" m/s^2");
-  Serial.print("\tY: "); Serial.print(a.acceleration.y);     Serial.print(" m/s^2 ");
-  Serial.print("\tZ: "); Serial.print(a.acceleration.z);     Serial.println(" m/s^2 ");
+  Serial.print("AX: "); Serial.print(a.acceleration.x);Serial.print(" ");
+  Serial.print("\tAY: "); Serial.print(a.acceleration.y);Serial.print(" ");
+  Serial.print("\tAZ: "); Serial.print(a.acceleration.z);Serial.print(" ");
 
-//  Serial.print("Gyro X: "); Serial.print(g.gyro.x);   Serial.print(" rad/s");
-//  Serial.print("\tY: "); Serial.print(g.gyro.y);      Serial.print(" rad/s");
-//  Serial.print("\tZ: "); Serial.print(g.gyro.z);      Serial.println(" rad/s");
+  Serial.print("\tGX: "); Serial.print(g.gyro.x);Serial.print(" ");
+  Serial.print("\tGY: "); Serial.print(g.gyro.y);Serial.print(" ");
+  Serial.print("\tGZ: "); Serial.print(g.gyro.z);Serial.print(" ");
 
   Serial.println();
-
 }
